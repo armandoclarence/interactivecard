@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Interactive card details form</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<main>
+			<section class="sectionCard">
+				<div class="front">
+					<img
+						src="assets/images/bg-card-front.png"
+						alt="Front Card"
+					/>
+					<div class="frontCard">
+						<div class="profile">
+							<img
+								src="assets/images/card-logo.svg"
+								alt="card logo"
+							/>
+						</div>
+						<h2
+							class="pin"
+							data-value="0000 0000 0000 0000"
+						>
+							0000 0000 0000 0000
+						</h2>
+						<div class="info">
+							<div
+								class="username"
+								data-value="Jane Appleseed"
+							>
+								Jane Appleseed
+							</div>
+
+							<div class="dateExp">
+								<div
+									class="month"
+									data-value="00"
+								>
+									00
+								</div>
+								/
+								<div
+									class="year"
+									data-value="00"
+								>
+									00
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="back">
+					<img
+						src="assets/images/bg-card-back.png"
+						alt="Back Card"
+					/>
+					<div
+						class="cvc"
+						data-value="000"
+					>
+						000
+					</div>
+				</div>
+			</section>
+			<aside class="forms">
+				<form action="">
+					<label for="username">Cardholder Name</label>
+					<input
+						type="text"
+						name="username"
+						id="username"
+						placeholder="e.g. Jane Appleseed"
+						class="is-invalid"
+					/>
+					<div class="warn">Can't be blank</div>
+					<label for="pin">Card Number</label>
+					<input
+						type="text"
+						name="pin"
+						id="pin"
+						placeholder="e.g. 1234 5678 9123 0000"
+						class="is-invalid pins"
+					/>
+					<div class="warn">Can't be blank</div>
+					<div class="dates">
+						<div class="dateLabel">
+							<label>Exp. Date (MM/YY)</label>
+							<label for="cvc">CVC</label>
+						</div>
+						<div class="dateInput">
+							<div class="warnMonth warns">
+								<input
+									type="number"
+									id="month"
+									placeholder="MM"
+									class="is-invalid"
+								/>
+								<div class="warn">Can't be blank</div>
+							</div>
+							<div class="warnYear warns">
+								<input
+									type="number"
+									id="year"
+									placeholder="YY"
+									class="is-invalid"
+								/>
+								<div class="warn">Can't be blank</div>
+							</div>
+							<div class="warnCVC warns">
+								<input
+									type="text"
+									name="cvc"
+									id="cvc"
+									placeholder="e.g. 123"
+									class="is-invalid"
+								/>
+								<div class="warn">Can't be blank</div>
+							</div>
+						</div>
+					</div>
+					<input
+						type="button"
+						id="submit"
+						value="Confirm"
+					/>
+				</form>
+			</aside>
+			<aside class="thanks">
+				<img
+					src="assets/images/icon-complete.svg"
+					alt=""
+				/>
+				<h1>Thank you!</h1>
+				<h3>We've added your card details</h3>
+				<input
+					type="button"
+					id="thankSubmit"
+					value="Continue"
+				/>
+			</aside>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
